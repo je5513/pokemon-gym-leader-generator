@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Pokémon Gym Leader generator</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>pokémon gym leader generator</h1>
       </header>
       <main>
-        <form>
+        <form id="gym-leader-generator-form">
           <input
             class="text"
             type="text"
@@ -22,13 +23,7 @@
           />
           <input class="submit" type="submit" />
         </form>
-        <div class="gym-leader" id="gym-leader">
-          <p>
-            the gym leader
-            <br />
-            more gym leader
-          </p>
-        </div>
+        <div class="gym-leader" id="gym-leader"></div>
       </main>
       <footer>
         <p>
@@ -50,5 +45,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
