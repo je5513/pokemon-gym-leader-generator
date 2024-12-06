@@ -14,20 +14,23 @@
         <h1>pokémon gym leader generator</h1>
       </header>
       <main>
-        <form id="gym-leader-generator-form">
-          <input
-            class="text"
-            type="text"
-            placeholder="Enter the type of gym leader you would like"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input class="submit" type="submit" />
-        </form>
-        <div class="gym-leader" id="gym-leader"></div>
+        <div class="form-container">
+          <form id="gym-leader-generator-form">
+            <input
+              class="text"
+              type="text"
+              placeholder="Enter the type of gym leader you would like"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input class="submit" type="submit" />
+          </form>
+          <small class="hint">i.e Fire, Grass, Water</small>
+        </div>
+        <div class="gym-leader hidden" id="gym-leader"></div>
       </main>
       <footer>
         <p>

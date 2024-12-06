@@ -1,5 +1,4 @@
 function displayGymLeader(response) {
-  console.log("Leader generated");
   new Typewriter("#gym-leader", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,9 +18,9 @@ function generateGymLeader(event) {
     "You are a Pokémon master and have defeated all the gym leaders in all of the Pokémon games. You are knowledgeable on type match ups and know what each type are strong, weak and super effective against. Your mission is to generate the perfect gym leader including the perfect party of 4 Pokémon that would match the gym leader's type. Please give the gym leader a name and a fun, brief description on their personality. Please seperate the gym leader's name, personality, and pokémon with <br />";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("Generating leader");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let gymLeaderElement = document.querySelector("#gym-leader");
+  gymLeaderElement.classList.remove("hidden");
+  gymLeaderElement.innerHTML = `Generating a ${instructionsInput.value} type gym leader`;
 
   axios.get(apiUrl).then(displayGymLeader);
 }
