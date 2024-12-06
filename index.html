@@ -6,11 +6,16 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Pokémon Gym Leader generator</title>
+    <title>pkmn gym leader generator</title>
   </head>
   <body>
     <div class="container">
       <header>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/181/original/recreation__let_s_go_pikachu_eevee_kanto_badges_by_mucrush_dctg8ws-fullview.png?1733509034"
+          alt="kanto gym badges"
+          class="gym-badges"
+        />
         <h1>pokémon gym leader generator</h1>
       </header>
       <main>
@@ -19,7 +24,7 @@
             <input
               class="text"
               type="text"
-              placeholder="Enter the type of gym leader you would like"
+              placeholder="Enter the 'type' of the gym leader"
               autofocus
               required
               autocomplete="off"
@@ -28,13 +33,13 @@
             />
             <input class="submit" type="submit" />
           </form>
-          <small class="hint">i.e Fire, Grass, Water</small>
+          <small class="hint">example: Fire, Water, Grass</small>
         </div>
         <div class="gym-leader hidden" id="gym-leader"></div>
       </main>
       <footer>
         <p>
-          This project was coded by
+          This AI project was coded by
           <a href="https://github.com/je5513" target="_blank">Jessica Shore</a>
           and is
           <a
