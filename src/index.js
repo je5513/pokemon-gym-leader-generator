@@ -20,8 +20,7 @@ function generateGymLeader(event) {
 
   let gymLeaderElement = document.querySelector("#gym-leader");
   gymLeaderElement.classList.remove("hidden");
-  gymLeaderElement.innerHTML = `Generating a ${instructionsInput.value} type gym leader`;
-
+  gymLeaderElement.innerHTML = `<div class = "generating"> <img class = "poke-ball" src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/188/original/Pokeball-PNG-HD-Image.png?1733516444" /> generating ${instructionsInput.value} type gym leader <img class = "poke-ball" src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/188/original/Pokeball-PNG-HD-Image.png?1733516444" /> </div>`;
   axios.get(apiUrl).then(displayGymLeader);
 }
 
